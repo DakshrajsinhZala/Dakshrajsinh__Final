@@ -1,28 +1,178 @@
+# 🔐 Password Guardian Pro
 
-# 🔐 Password Guardian
+An advanced Password Strength Checker and Password Generator built with **HTML, CSS, and JavaScript**.
 
-A modern Password Strength Checker built with:
+## 🚀 Live Features
 
-- HTML
-- CSS
-- JavaScript
-- zxcvbn Password Estimator
+### 🔍 Password Strength Checker
 
-## Features
+* Real-time password analysis
+* Industry-standard `zxcvbn` password scoring
+* Password entropy calculation
+* Crack-time estimation
+* Security score meter
+* Password feedback and suggestions
 
-- Real-time password strength meter
-- Entropy calculator
-- Crack time estimation
-- Password generator
-- Dark mode
-- Copy password
-- Responsive UI
-- Password suggestions
+### 🔒 Password Analysis
 
-## Screenshots
+* Uppercase detection
+* Lowercase detection
+* Number detection
+* Symbol detection
+* Length analysis
+* Repeated character detection
 
-(Add screenshots here)
+### 🎲 Password Generator
 
-## Author
+* Generate strong passwords instantly
+* Adjustable password length (8-64 characters)
+* Include:
 
-Daksh Zala
+  * Uppercase letters
+  * Lowercase letters
+  * Numbers
+  * Symbols
+* One-click copy button
+
+### 📊 Security Dashboard
+
+* Animated strength meter
+* Security score chart
+* Password history
+* Export password reports
+* Dark and Light mode
+
+### 🎨 User Interface
+
+* Glassmorphism design
+* Responsive layout
+* Modern cybersecurity dashboard
+* Mobile-friendly design
+* Smooth animations
+
+---
+
+# 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* zxcvbn Password Strength Estimator
+* Chart.js
+
+---
+
+# 📂 Project Structure
+
+```text
+Password-Guardian-Pro/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+```
+
+---
+
+# ⚡ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Password-Guardian-Pro.git
+```
+
+2. Open the project folder:
+
+```bash
+cd Password-Guardian-Pro
+```
+
+3. Run the project by opening:
+
+```text
+index.html
+```
+
+or use:
+
+```bash
+Live Server (VS Code Extension)
+```
+
+---
+
+# 📸 Screenshots
+
+Add screenshots of:
+
+* Password Checker
+* Password Generator
+* Dark Mode
+* Security Dashboard
+
+Create a folder:
+
+```text
+screenshots/
+```
+
+and add your images there.
+
+---
+
+# 🌟 Future Improvements
+
+* Password breach checker (Have I Been Pwned API)
+* Login and user accounts
+* Password manager
+* Multi-language support
+* Installable PWA
+* Cloud backup
+* AI password suggestions
+* PDF report export
+* Advanced cybersecurity dashboard
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**Daksh Zala**
+
+GitHub: https://github.com/your-username
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+⭐ Star this repository
+
+🍴 Fork this repository
+
+📢 Share it with others
+
+---
+
+## Made with ❤️ by Daksh Zala
