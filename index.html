@@ -1,90 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Password Guardian</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Guardian Pro</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-<div class="container">
+  <div class="particles"></div>
 
-<h1>🔐 Password Guardian</h1>
+  <header>
+    <h1>🔐 Password Guardian Pro</h1>
+    <p>Advanced Password Security Dashboard</p>
 
-<div class="theme-switch">
-<button id="themeBtn">🌙 Dark Mode</button>
-</div>
+    <button id="themeBtn">
+      🌙 Toggle Theme
+    </button>
+  </header>
 
-<div class="password-box">
+  <main>
 
-<input type="password" id="password" placeholder="Enter password">
+    <!-- PASSWORD CHECKER -->
 
-<button id="showBtn">👁</button>
+    <section class="card">
 
-</div>
+      <h2>Password Strength Checker</h2>
 
-<div class="meter">
-<div id="strengthBar"></div>
-</div>
+      <div class="password-box">
 
-<h2 id="strengthText">Strength: -</h2>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        >
 
-<div class="stats">
+        <button id="showBtn">
+          👁
+        </button>
 
-<p>Entropy: <span id="entropy">0</span> bits</p>
+      </div>
 
-<p>Crack Time: <span id="crackTime">-</span></p>
+      <div class="meter">
+        <div id="strengthBar"></div>
+      </div>
 
-<p>Score: <span id="score">0</span>/4</p>
+      <h3 id="strengthText">
+        Strength: -
+      </h3>
 
-</div>
+      <div class="stats">
 
-<div id="feedback"></div>
+        <div class="stat">
+          <h4>Entropy</h4>
+          <p id="entropy">0 bits</p>
+        </div>
 
-<hr>
+        <div class="stat">
+          <h4>Crack Time</h4>
+          <p id="crackTime">-</p>
+        </div>
 
-<h2>Password Generator</h2>
+        <div class="stat">
+          <h4>Score</h4>
+          <p id="score">0 / 4</p>
+        </div>
 
-<label>
-Length:
-<span id="lengthValue">16</span>
-</label>
+        <div class="stat">
+          <h4>Characters</h4>
+          <p id="charCount">0</p>
+        </div>
 
-<input
-type="range"
-id="length"
-min="8"
-max="64"
-value="16"
->
+      </div>
 
-<div class="options">
+      <div id="feedback"></div>
 
-<label><input type="checkbox" id="upper" checked> Uppercase</label>
+    </section>
 
-<label><input type="checkbox" id="lower" checked> Lowercase</label>
+    <!-- PASSWORD ANALYSIS -->
 
-<label><input type="checkbox" id="number" checked> Numbers</label>
+    <section class="card">
 
-<label><input type="checkbox" id="symbol" checked> Symbols</label>
+      <h2>Password Analysis</h2>
 
-</div>
+      <ul id="analysisList">
 
-<button id="generateBtn">
-Generate Password
-</button>
+        <li>✔ Contains Uppercase</li>
+        <li>✔ Contains Lowercase</li>
+        <li>✔ Contains Numbers</li>
+        <li>✔ Contains Symbols</li>
+        <li>✔ No Common Patterns</li>
 
-<button id="copyBtn">
-Copy Password
-</button>
+      </ul>
 
-</div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- PASSWORD GENERATOR -->
+
+    <section class="card">
+
+      <h2>Password Generator</h2>
+
+      <label>
+        Length:
+        <span id="lengthValue">16</span>
+      </label>
+
+      <input
+        type="range"
+        min="8"
+        max="64"
+        value="16"
+        id="length"
+      >
+
+      <div class="options">
+
+        <label>
+          <input type="checkbox" id="upper" checked>
+          Uppercase
+        </label>
+
+        <label>
+          <input type="checkbox" id="lower" checked>
+          Lowercase
+        </label>
+
+        <label>
+          <input type="checkbox" id="number" checked>
+          Numbers
+        </label>
+
+        <label>
+          <input type="checkbox" id="symbol" checked>
+          Symbols
+        </label>
+
+      </div>
+
+      <div class="generator-buttons">
+
+        <button id="generateBtn">
+          Generate Password
+        </button>
+
+        <button id="copyBtn">
+          Copy Password
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- PASSWORD HISTORY -->
+
+    <section class="card">
+
+      <h2>Password History</h2>
+
+      <ul id="history">
+
+        <li>No passwords generated yet.</li>
+
+      </ul>
+
+    </section>
+
+    <!-- SECURITY SCORE -->
+
+    <section class="card">
+
+      <h2>Security Score</h2>
+
+      <canvas id="securityChart"></canvas>
+
+    </section>
+
+    <!-- TIPS -->
+
+    <section class="card">
+
+      <h2>Security Tips</h2>
+
+      <ul class="tips">
+
+        <li>✔ Use at least 12 characters.</li>
+        <li>✔ Use symbols and numbers.</li>
+        <li>✔ Avoid names and birthdays.</li>
+        <li>✔ Never reuse passwords.</li>
+        <li>✔ Use a password manager.</li>
+        <li>✔ Enable Two-Factor Authentication.</li>
+
+      </ul>
+
+    </section>
+
+    <!-- ADVANCED TOOLS -->
+
+    <section class="card">
+
+      <h2>Advanced Security Tools</h2>
+
+      <button id="exportBtn">
+        Export Report
+      </button>
+
+      <button id="clearBtn">
+        Clear History
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>
+      Made with ❤️ by Daksh Zala
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
