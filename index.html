@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Guardian</title>
 
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>🔐 Password Guardian</h1>
+
+<div class="theme-switch">
+<button id="themeBtn">🌙 Dark Mode</button>
+</div>
+
+<div class="password-box">
+
+<input type="password" id="password" placeholder="Enter password">
+
+<button id="showBtn">👁</button>
+
+</div>
+
+<div class="meter">
+<div id="strengthBar"></div>
+</div>
+
+<h2 id="strengthText">Strength: -</h2>
+
+<div class="stats">
+
+<p>Entropy: <span id="entropy">0</span> bits</p>
+
+<p>Crack Time: <span id="crackTime">-</span></p>
+
+<p>Score: <span id="score">0</span>/4</p>
+
+</div>
+
+<div id="feedback"></div>
+
+<hr>
+
+<h2>Password Generator</h2>
+
+<label>
+Length:
+<span id="lengthValue">16</span>
+</label>
+
+<input
+type="range"
+id="length"
+min="8"
+max="64"
+value="16"
+>
+
+<div class="options">
+
+<label><input type="checkbox" id="upper" checked> Uppercase</label>
+
+<label><input type="checkbox" id="lower" checked> Lowercase</label>
+
+<label><input type="checkbox" id="number" checked> Numbers</label>
+
+<label><input type="checkbox" id="symbol" checked> Symbols</label>
+
+</div>
+
+<button id="generateBtn">
+Generate Password
+</button>
+
+<button id="copyBtn">
+Copy Password
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
