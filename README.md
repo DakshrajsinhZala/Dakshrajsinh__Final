@@ -150,7 +150,7 @@ This project is licensed under the MIT License.
 
 # 👨‍💻 Author
 
-**Daksh Zala**
+**Zala Dakshrajsinh**
 
 GitHub: https://github.com/your-username
 
@@ -169,3 +169,4 @@ If you like this project:
 ---
 
 ## Made with ❤️ by Daksh Zala
+ 
