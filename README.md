@@ -152,9 +152,7 @@ This project is licensed under the MIT License.
 
 **Zala Dakshrajsinh**
 
-GitHub: https://github.com/ZalaDakshrajsinh
-
----
+linkedin : www.linkedin.com/in/dakshrajsinh-zala
 
 # ⭐ Support
 
