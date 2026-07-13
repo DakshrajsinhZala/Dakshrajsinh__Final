@@ -94,13 +94,6 @@ cd Password-Guardian-Pro
 
 ```text
 index.html
-```
-
-or use:
-
-```bash
-Live Server (VS Code Extension)
-```
 
 ---
 
