@@ -168,5 +168,5 @@ If you like this project:
 
 ---
 
-## Made with ❤️ by Daksh Zala
+## Made with ❤️ by Zala Dakshrajsinh
  
