@@ -81,7 +81,7 @@ Password-Guardian-Pro/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Password-Guardian-Pro.git
+git clone https://github.com/Zala-Dakshrajsinh/Password-Guardian-Pro.git
 ```
 
 2. Open the project folder:
